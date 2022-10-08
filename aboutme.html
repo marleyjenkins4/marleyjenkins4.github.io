@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/navbar.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+  setTimeout(function() {
+    $("h3").addClass("slide-in")
+  }, 500);
+});
+$(".trigger").on("click", function() {
+  $("h3").toggleClass("slide-in");
+});
+</script>
+<html>
+    <body>
+        <section class="navbar">
+            <nav>
+                <ul class="menu">
+                  <li class="logo"><img src="./images/vector/aboutpage/LOGO.svg"></li>
+                  <li class="item"><a href="#">Home</a></li>
+                  <li class="item"><a href="#">About</a></li>
+             
+                  <li class="item"><a href="#">Blog</a></li>
+                  <li class="item"><a href="#">Contact</a>
+           
+        
+                </ul>
+              </nav>
+        </section>
+        <section class="aboutme">
+            <p>
+                My name is Marley Jenkins and I graduated from Winthrop University with a degree in Digital information Design and a cocnentration in Web Application Development. 
+                My major was  combination of both Computer Science and Design.  I attended Winthrop because I was able to find a major that combined both of my interests. 
+                There, I was able to gain user experience, design, and backend web development skills.     
+                <br/>
+                During my time at Winthrop, I was always challenged with projects that helped me to step out of my comfort zone as a Web Designer. 
+                I applied these these skills and help out around my community back in Charleston. 
+                Moreover, I was granted incredible opportunities, such as conducting mentored-lead research, participant in coding events, and create side projects in my spare time. 
+
+            </p>
+        </section> 
+    </body>
+</html>
