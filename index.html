@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/launch.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <html>
-    <script>
-        window.onload = fadeIn;
-  
-        function fadeIn() {
-            var fade = document.getElementById("hey");
-            var opacity = 0;
-            var intervalID = setInterval(function() {
-  
-                if (opacity < 1) {
-                    opacity = opacity + 0.1
-                    fade.style.opacity = opacity;
-                } else {
-                    clearInterval(intervalID);
-                }
-            }, 200);
-        }
-    </script>
-    <script>
-          $(function() {
-  var body = $('#starshine'),
-      template = $('.template.shine'),
-      stars =  500,
-      sparkle = 20;
-  
-    
-  var size = 'small';
-  var createStar = function() {
-    template.clone().removeAttr('id').css({
-      top: (Math.random() * 100) + '%',
-      left: (Math.random() * 100) + '%',
-      webkitAnimationDelay: (Math.random() * sparkle) + 's',
-      mozAnimationDelay: (Math.random() * sparkle) + 's'
-    }).addClass(size).appendTo(body);
-  };
- 
-  for(var i = 0; i < stars; i++) {
-    if(i % 2 === 0) {
-      size = 'small';
-    } else if(i % 3 === 0) {
-      size = 'medium';
-    } else {
-      size = 'large';
-    }
-    
-    createStar();
-  }
-});
-    </script>
+
 <body>
-    <div id="starshine">
+  <div id="starshine">
     <div class="template shine"></div>
-</div>
-<section class="launch">
-
-        <h1 id="name" class="intro"> 
-            <span id="hey">HI I'M</span> 
-            MARLEY. </h1>
-
-    <div class="image">
-      <img class="self"src="./images/vector/launchpage/self_portait.svg">
-    </div>
-
-         <a href="aboutme.html" class="button">EXPLORE</a>
-
+   </div>
+<section>
+	<div class="content">
+		<h2> I'M MARLEY</h2>
+		<h2> I'M MARLEY</h2>
+	</div>
 </section>
+<div class="shape-1">
+  <div class="container">
+      <div class="circle yellow"></div>
+      <div class="circle orange"></div>
+      <div class="circle blue"></div>
+      <div class="circle pink"></div>
+  </div>
+  <div class="container">
+      <div class="circle outline"></div>
+      <div class="circle outline"></div>
+      <div class="circle outline"></div>
+      <div class="circle outline"></div>
+  </div>
+</div>
 
-</body>
+<div class="shape-2">
+  <div class="container">
+      <div class="square">
+          <div class="half-circle orange"></div>
+      </div>
+      <div class="square">
+          <div class="half-circle blue"></div>
+      </div>
+      <div class="square">
+          <div class="half-circle pink"></div>
+      </div>
+      <div class="square">
+          <div class="half-circle yellow"></div>
+      </div>
+  </div>
+   
+  <div class="container">
+      <div class="square">
+          <div class="half-circle outline"></div>
+      </div>
+      <div class="square">
+          <div class="half-circle outline"></div>
+      </div>
+      <div class="square">
+          <div class="half-circle outline"></div>
+      </div>
+      <div class="square">
+          <div class="half-circle outline"></div>
+      </div>
+  </div>      
+</div>
+
+<div class="shape-3">
+  <div class="container">
+      <div class="square">
+          <div class="rectangle blue"></div>
+      </div>
+      <div class="square">
+          <div class="rectangle pink"></div>
+      </div>
+      <div class="square">
+          <div class="rectangle yellow"></div>
+      </div>
+      <div class="square">
+          <div class="rectangle orange"></div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="square">
+          <div class="rectangle circle_outline1"></div>
+      </div>
+      <div class="square">
+          <div class="rectangle circle_outline1"></div>
+      </div>
+      <div class="square">
+          <div class="rectangle circle_outline1"></div>
+      </div>
+      <div class="square">
+          <div class="rectangle circle_outline1"></div>
+      </div>
+  </div>      
+</div>
+  </body>
 </html>

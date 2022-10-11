@@ -5,42 +5,134 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 
-$(document).ready(function() {
-  setTimeout(function() {
-    $("h3").addClass("slide-in")
-  }, 500);
-});
-$(".trigger").on("click", function() {
-  $("h3").toggleClass("slide-in");
-});
+    $(document).ready(function() {
+      setTimeout(function() {
+        $("h3").addClass("slide-in")
+      }, 500);
+    });
+    $(".trigger").on("click", function() {
+      $("h3").toggleClass("slide-in");
+    });
 </script>
+
+<script>
+    $(function() {
+  var body = $('#starshine'),
+  template = $('.template.shine'),
+  stars =  500,
+  sparkle = 20;
+
+
+  var size = 'small';
+  var createStar = function() {
+  template.clone().removeAttr('id').css({
+  top: (Math.random() * 100) + '%',
+  left: (Math.random() * 100) + '%',
+  webkitAnimationDelay: (Math.random() * sparkle) + 's',
+  mozAnimationDelay: (Math.random() * sparkle) + 's'
+  }).addClass(size).appendTo(body);
+  };
+
+  for(var i = 0; i < stars; i++) {
+  if(i % 2 === 0) {
+  size = 'small';
+  } else if(i % 3 === 0) {
+  size = 'medium';
+  } else {
+  size = 'large';
+  }
+
+  createStar();
+  }
+  });
+</script>
+<script>
+  const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+  
+  //Toggle Nav
+  burger.addEventListener('click', ()=>{
+    nav.classList.toggle('nav-active');
+    
+    //Animate Links
+    navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+        link.style.animation = ''
+      }else{
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+
+      }
+    });
+    
+    //burger animation
+    burger.classList.toggle('toggle');
+    
+    
+  });
+  
+  
+  
+  
+}
+
+navSlide();
+</script>
+
 <html>
     <body>
+      
+
+  
+      <div id="starshine">
+        <div class="template shine"></div>
+       </div>
         <section class="navbar">
-            <nav>
-                <ul class="menu">
-                  <li class="logo"><img src="./images/vector/aboutpage/LOGO.svg"></li>
-                  <li class="item"><a href="#">Home</a></li>
-                  <li class="item"><a href="#">About</a></li>
-             
-                  <li class="item"><a href="#">Blog</a></li>
-                  <li class="item"><a href="#">Contact</a>
-           
-        
-                </ul>
-              </nav>
+          <nav>
+          <div class="logo">
+           <a href= "aboutme.html"><img src="./images/vector/aboutpage/LOGO.svg">
+            </div>
+            <ul class="nav-links">
+         
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Contact Me</a></li>
+              <li><a href="#">Resume</a></li>
+
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
         </section>
+
+    
+</script>
         <section class="aboutme">
             <p>
                 My name is Marley Jenkins and I graduated from Winthrop University with a degree in Digital information Design and a cocnentration in Web Application Development. 
                 My major was  combination of both Computer Science and Design.  I attended Winthrop because I was able to find a major that combined both of my interests. 
                 There, I was able to gain user experience, design, and backend web development skills.     
-                <br/>
+                <br/><br/>
                 During my time at Winthrop, I was always challenged with projects that helped me to step out of my comfort zone as a Web Designer. 
                 I applied these these skills and help out around my community back in Charleston. 
                 Moreover, I was granted incredible opportunities, such as conducting mentored-lead research, participant in coding events, and create side projects in my spare time. 
 
             </p>
         </section> 
+        
+        <section class="aboutmemore">
+          <p>
+            I've always considered myself to be a creative individual, I strive to convey the world from my perspective. 
+            <br/> <br/>
+            I have years of experience in web programming and development using Java, Javascript, HTML/CSS, and React.js. 
+            I am also experienced in Figma, Adobe Illustrator, and Adobe Photoshop. I am continuing to improve my skills every day.
+
+          </p>
+          <img src="./images/vector/aboutpage/outline_of_me.svg">
+      </section> 
     </body>
 </html>
