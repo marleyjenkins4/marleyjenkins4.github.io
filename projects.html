@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/navbar.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 <head>
@@ -20,68 +21,68 @@
 </script>
 
 <script>
-    $(function() {
-  var body = $('#starshine'),
-  template = $('.template.shine'),
-  stars =  500,
-  sparkle = 20;
+                    $(function() {
+                  var body = $('#starshine'),
+                  template = $('.template.shine'),
+                  stars =  500,
+                  sparkle = 20;
 
 
-  var size = 'small';
-  var createStar = function() {
-  template.clone().removeAttr('id').css({
-  top: (Math.random() * 100) + '%',
-  left: (Math.random() * 100) + '%',
-  webkitAnimationDelay: (Math.random() * sparkle) + 's',
-  mozAnimationDelay: (Math.random() * sparkle) + 's'
-  }).addClass(size).appendTo(body);
-  };
+                  var size = 'small';
+                  var createStar = function() {
+                  template.clone().removeAttr('id').css({
+                  top: (Math.random() * 100) + '%',
+                  left: (Math.random() * 100) + '%',
+                  webkitAnimationDelay: (Math.random() * sparkle) + 's',
+                  mozAnimationDelay: (Math.random() * sparkle) + 's'
+                  }).addClass(size).appendTo(body);
+                  };
 
-  for(var i = 0; i < stars; i++) {
-  if(i % 2 === 0) {
-  size = 'small';
-  } else if(i % 3 === 0) {
-  size = 'medium';
-  } else {
-  size = 'large';
-  }
+                  for(var i = 0; i < stars; i++) {
+                  if(i % 2 === 0) {
+                  size = 'small';
+                  } else if(i % 3 === 0) {
+                  size = 'medium';
+                  } else {
+                  size = 'large';
+                  }
 
-  createStar();
-  }
-  });
-</script>
-<script>
-  const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-  
-  //Toggle Nav
-  burger.addEventListener('click', ()=>{
-    nav.classList.toggle('nav-active');
-    
-    //Animate Links
-    navLinks.forEach((link, index)=>{
-      if(link.style.animation){
-        link.style.animation = ''
-      }else{
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                  createStar();
+                  }
+                  });
+                </script>
+                <script>
+                  const navSlide = () => {
+                  const burger = document.querySelector('.burger');
+                  const nav = document.querySelector('.nav-links');
+                  const navLinks = document.querySelectorAll('.nav-links li');
+                  
+                  //Toggle Nav
+                  burger.addEventListener('click', ()=>{
+                    nav.classList.toggle('nav-active');
+                    
+                    //Animate Links
+                    navLinks.forEach((link, index)=>{
+                      if(link.style.animation){
+                        link.style.animation = ''
+                      }else{
+                            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
 
-      }
-    });
-    
-    //burger animation
-    burger.classList.toggle('toggle');
-    
-    
-  });
-  
-  
-  
-  
-}
+                      }
+                    });
+                    
+                    //burger animation
+                    burger.classList.toggle('toggle');
+                    
+                    
+                  });
+                  
+                  
+                  
+                  
+                }
 
-navSlide();
+                navSlide();
 </script>
 
 <html>
@@ -98,12 +99,12 @@ navSlide();
  <img src="./images/vector/aboutpage/LOGO.svg">
                 </div>
             <ul class="nav-links">
-                
+              <li><a href="aboutme.html">About Me</a></li>  
               <li><a href="research.html">Research</a></li>
               <li><a href="contactme.html">Contact Me</a></li>
               <li><a href="resume.html">Resume</a></li>
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="aboutme.html">About Me</a></li>
+             
 
             </ul>
             <div class="burger">
@@ -130,8 +131,18 @@ navSlide();
           <div class="content">
             <div class="content-1 active">
                 <h1> Game Redesign Site</h1>
-                <p>This site was designed for my visual communtications class. We were told to redesign a game site  and put more emphasis on creating a community for individuals who consider themselves fans of the kirby game . </p>
-              
+                <p>This site was designed for my visual communtications class. 
+                  We were told to redesign a game site  and put more emphasis on creating a community for individuals who consider themselves fans of the kirby game . </p>
+
+                <h1> Whisk It Shoppe Site</h1>
+                <p> This site was created in my senior capstone course. 
+                  The objective was to create an online presence for a local brick and boarder bakery shop called Whisk It Shoppe located in Rock Hill, South Carolina. 
+                   We created an customizeable  online catering ordering system that allows customers to order cakes, cookies, and other sweet treats at their convience. </p>
+                 <h1> Typeface Font Site</h1>
+                 <p>This site was designed for my visuals communications class.
+                   We were challenged to create a site based on a typography of  our choosing. 
+                  I choose to focus on The Gill Sans Font and explore it’s history and importance.</p>
+                       
             </div>
             <div class="content-2"><img src="./images/vector/projectpage/CHRISTIN.png"></div>
             <div class="content-3">
@@ -144,43 +155,43 @@ navSlide();
           </div>
           <script>
             let i = -1;
-let time = 3000;
-let slideTimer;
-let slides = document.getElementsByClassName('slide');
-let slideDots = document.getElementsByClassName('dot');
+            let time = 3000;
+            let slideTimer;
+            let slides = document.getElementsByClassName('slide');
+            let slideDots = document.getElementsByClassName('dot');
 
-function clickChangeSlide(n){
-  clearTimeout(slideTimer);
-  console.log(n);
-  changeSlide(n, true);
-}
+            function clickChangeSlide(n){
+              clearTimeout(slideTimer);
+              console.log(n);
+              changeSlide(n, true);
+            }
 
-function changeSlide(n = i, manual = false){
-  
-  for(let j = 0; j < slides.length; j++){
-    if(j == i) {
-      slides[j].classList.add('prev-slide');
-      slides[j].classList.remove('active-slide');
-      slideDots[j].classList.remove('active-dot');
-      continue; 
-    }
-    slideDots[j].classList.remove('active-dot');
-    slides[j].classList.remove('prev-slide'); 
-    slides[j].classList.remove('active-slide');
-  }
-  if(manual){
-    if(n < 0) i = slides.length - 1
-    else if(n > slides.length - 1) i = 0
-    else i = n
-  }else i = i < slides.length - 1 ? i+1 : 0;
-  
-  slides[i].classList.add('active-slide');
-  slideDots[i].classList.add('active-dot');
-  
-  slideTimer = setTimeout('changeSlide()', time);
-}
+            function changeSlide(n = i, manual = false){
+              
+              for(let j = 0; j < slides.length; j++){
+                if(j == i) {
+                  slides[j].classList.add('prev-slide');
+                  slides[j].classList.remove('active-slide');
+                  slideDots[j].classList.remove('active-dot');
+                  continue; 
+                }
+                slideDots[j].classList.remove('active-dot');
+                slides[j].classList.remove('prev-slide'); 
+                slides[j].classList.remove('active-slide');
+              }
+              if(manual){
+                if(n < 0) i = slides.length - 1
+                else if(n > slides.length - 1) i = 0
+                else i = n
+              }else i = i < slides.length - 1 ? i+1 : 0;
+              
+              slides[i].classList.add('active-slide');
+              slideDots[i].classList.add('active-dot');
+              
+              slideTimer = setTimeout('changeSlide()', time);
+            }
 
-window.onload = changeSlide();
+            window.onload = changeSlide();
 
 
           </script>
