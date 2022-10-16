@@ -359,7 +359,11 @@ border-radius: 62.5px;
     color:white;
   }
   }
-
+.outline{
+  display:flex;
+  justify-content: center;
+  padding-top: 2em;
+}
 
 .nav-links{
   display: flex;
@@ -374,12 +378,12 @@ border-radius: 62.5px;
   display: flex;
 justify-content:center;
   align-items: center;
-  min-height: 10vh;
+
   font-family: 'Abhaya Libre Medium';
 font-style: normal;
 font-weight: 500;
 font-size: 1.3em;
-padding-top:8em;
+padding-top:2em;
 padding-left:16em;
 width:80%;
 color:white;
@@ -392,6 +396,10 @@ color:white;
   justify-content: space-around;
   align-items: center;
 
+}
+.intrologo{
+  display:flex;
+justify-content: center;
 }
 
 

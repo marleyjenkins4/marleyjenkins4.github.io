@@ -1,273 +1,282 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-#contacts {
-  color: #fff;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+/* Color Variables */
+/* Social Icon Mixin */
+/* Social Icons */
+.social-icons {
   display: flex;
   justify-content: center;
-  font-size: 40px;
-  padding: 30px;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0px;
-  -webkit-animation: blink 1s ease-in-out alternate infinite;
-          animation: blink 1s ease-in-out alternate infinite;
+  z-index: 1;
+  margin-top: 50px;
 }
 
-#summary {
+.social-icon {
   display: flex;
+  align-items: center;
+  z-index: 1;
   justify-content: center;
-  font-family: "Alegreya";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  -webkit-animation: blink 1s ease-in-out;
-          animation: blink 1s ease-in-out;
-}
-
-@-webkit-keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-form {
-  margin-left: auto;
-  margin-right: auto;
-  width: 965px;
-  height: 450px;
-  padding: 30px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  overflow: hidden;
-}
-
-textarea {
-  background: transparent;
-  width: 894px;
-  height: 110px;
-  border: 1px solid white;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: block;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  color: #fff;
-  padding-left: 45px;
-  padding-right: 20px;
-  padding-top: 12px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-select {
-  width: 894px;
-  height: 48px;
-  line-height: 1.5;
-  font-size: 1.4em;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -mox-border-radius: 10px;
-  color: #fff;
-  display: block;
-  background: transparent;
-  margin-bottom: 20px;
-  display: block;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  border: 1px solid white;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.nameinput, .emailinput {
-  width: 894px;
-  height: 48px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: block;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  border: 1px solid white;
-  color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-}
-
-input[type=submit] {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
   cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  z-index: 1;
 }
-
-input.nameinput {
-  border: 1px solid white;
-  background: transparent;
-  padding-left: 45px;
-}
-
-input.emailinput {
-  background: transparent;
-  padding-left: 45px;
-  border: 1px solid white;
-}
-
-input.message {
-  background: transparent;
-  padding-left: 45px;
-  border: 1px solid white;
-}
-
-select.indent {
-  padding-left: 45px;
-  cursor: pointer;
-}
-
-::-webkit-input-placeholder {
+.social-icon:hover {
   color: #fff;
+  z-index: 1;
+}
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon:active {
+  z-index: 1;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--linkedin .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--linkedin .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon--twitter {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--twitter .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--twitter .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon--codepen {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--codepen .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--codepen .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon--facebook {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--facebook .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--facebook .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon--instagram {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--instagram .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--instagram .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon--dribbble {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--dribbble .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--dribbble .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon--github {
+  background: white;
+  color: #6E0664;
+  z-index: 1;
+}
+.social-icon--github .tooltip {
+  background: white;
+  color: currentColor;
+  z-index: 1;
+}
+.social-icon--github .tooltip:after {
+  border-top-color: white;
+  z-index: 1;
+}
+.social-icon i {
+  position: relative;
+  top: 1px;
+  z-index: 1;
 }
 
-:-moz-placeholder {
-  color: #fff;
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  z-index: 1;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
 }
 
 ::-moz-placeholder {
-  color: #fff;
+  color: white;
+  font-family: "Abhaya Libre Medium";
 }
 
 :-ms-input-placeholder {
-  color: #fff;
+  color: white;
+  font-family: "Abhaya Libre Medium";
 }
 
-input:focus, textarea:focus {
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  border: 1px solid white;
+::placeholder {
+  color: white;
+  font-family: "Abhaya Libre Medium";
 }
 
-.btn {
-  border: none;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  width: 200px;
-  height: 48px;
-  color: #000;
-  background: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  position: relative;
-  outline: none;
-  box-shadow: 0 6px #cecece;
-  border-radius: 5px;
+input[type=text], select, textarea {
+  width: 80%;
   float: right;
-  z-index: 1;
-  margin-right: 6px;
-}
-
-.btn:hover {
-  background: #fff;
-  outline: none;
-  box-shadow: 0 4px #cecece;
-  top: 2px;
-  z-index: 1;
-}
-
-.btn:active {
-  background: #fff;
-  outline: none;
-  box-shadow: 0 0 #cecece;
-  top: 6px;
-  z-index: 1;
-}
-
-.flat {
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  outline: none;
-  position: relative;
-  transition: all 0.3s;
-}
-
-.flat:before {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 60px;
-}
-
-.flat {
-  width: 960px !important;
-  height: 48px;
-  overflow: hidden;
+  padding: 12px;
+  font-family: "Abhaya Libre Medium";
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: -40px;
   margin-bottom: 20px;
-  background: url(http://www.jordancundiff.com/wp-content/uploads/2014/03/icon-dropdown.png) no-repeat right;
+  resize: vertical;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1035px) {
-  h1 {
-    font-size: 80px;
-  }
-  form {
-    width: 736px !important;
-  }
-  #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat > select, #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat {
-    width: 731px !important;
-  }
-  .nameinput, .emailinput, #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Message > textarea {
-    width: 666px !important;
-  }
+label {
+  font-family: "Abhaya Libre Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: white;
+  float: left;
+  width: 80%;
 }
-@media only screen and (max-width: 804px) {
-  h1 {
-    font-size: 50px;
-  }
-  form {
-    width: 450px !important;
-  }
-  #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat > select, #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat {
-    width: 445px !important;
-  }
-  .nameinput, .emailinput, #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Message > textarea {
-    width: 380px !important;
-  }
+
+.submits {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
-@media only screen and (max-width: 517px) {
-  h1 {
-    font-size: 30px;
+
+input[type=submit] {
+  align-content: center;
+  margin-top: 19px;
+  margin-left: 270px;
+  cursor: pointer;
+  width: 30%;
+  background-color: transparent;
+  color: white;
+  padding: 12px 20px;
+  border: #fff;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.contacts {
+  display: flex;
+  margin-left: 200px;
+  padding: 30px;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+  line-height: 68px;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #6E0664;
+  z-index: 1;
+}
+
+.container {
+  width: 80%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  label {
+    font-family: "Abhaya Libre Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    float: left;
   }
-  form {
-    width: 295px !important;
-  }
-  #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat > select, #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Subject.flat {
-    width: 290px !important;
-  }
-  .nameinput, .emailinput, #wpcf7-f156-p143-o1\ formwrap > form > p > span.wpcf7-form-control-wrap.Message > textarea {
-    width: 225px !important;
-  }
-  .btn {
-    width: 110px;
+  input[type=text], select, textarea {
+    width: 60%;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    resize: vertical;
   }
 }/*# sourceMappingURL=form.css.map */
