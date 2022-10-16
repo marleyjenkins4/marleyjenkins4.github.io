@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/form.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<head>
+    <title>Marley | Research </title>
+  </head>
+  <script>
+    $(function() {
+  var body = $('#starshine'),
+  template = $('.template.shine'),
+  stars =  500,
+  sparkle = 20;
+
+
+  var size = 'small';
+  var createStar = function() {
+  template.clone().removeAttr('id').css({
+  top: (Math.random() * 100) + '%',
+  left: (Math.random() * 100) + '%',
+  webkitAnimationDelay: (Math.random() * sparkle) + 's',
+  mozAnimationDelay: (Math.random() * sparkle) + 's'
+  }).addClass(size).appendTo(body);
+  };
+
+  for(var i = 0; i < stars; i++) {
+  if(i % 2 === 0) {
+  size = 'small';
+  } else if(i % 3 === 0) {
+  size = 'medium';
+  } else {
+  size = 'large';
+  }
+
+  createStar();
+  }
+  });
+  </script>
+  <script>
+  const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+  
+  //Toggle Nav
+  burger.addEventListener('click', ()=>{
+    nav.classList.toggle('nav-active');
+    
+    //Animate Links
+    navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+        link.style.animation = ''
+      }else{
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+
+      }
+    });
+    
+    //burger animation
+    burger.classList.toggle('toggle');
+    
+    
+  });
+  
+  
+  
+  
+}
+
+navSlide();
+</script>
+<html>
+    <body   ng-app="myApp">
+      
+
+  
+      <div id="starshine">
+        <div class="template shine"></div>
+        </div>
+        <section class="navbar">
+            <nav>
+              <div class="logo">
+   <img src="./images/vector/aboutpage/LOGO.svg">
+                  </div>
+              <ul class="nav-links">
+                <li><a href="aboutme.html">About Me</a></li>  
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+
+              </ul>
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            </nav>
+          </section>
+          <h1 id="contacts"> CONTACT ME</h1>
+          <p id="summary">Feel free to contact me about any questions you may have!</p>
+
+        <form action="">
+
+  <section class="left">
+
+    <div class="wpcf7" id="wpcf7-f156-p143-o1 formwrap"></div>
+    <form action="/?page_id=143#wpcf7-f156-p143-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div style="display: none;">
+            <input type="hidden" name="_wpcf7" value="156">
+            <input type="hidden" name="_wpcf7_version" value="3.7.2">
+            <input type="hidden" name="_wpcf7_locale" value="en_US">
+            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f156-p143-o1">
+            <input type="hidden" name="_wpnonce" value="d1da331d93">
+        </div>
+        <p>
+           <span class="wpcf7-form-control-wrap Name">
+             <input type="text" name="Name" value="" size="40" class="nameinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name">
+          </span>
+          <span class="wpcf7-form-control-wrap Email">
+            <input type="email" name="Email"  size="40" class="emailinput wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email">
+          </span>
+          <span class="wpcf7-form-control-wrap Subject flat">
+            <select name="Subject" class="indent wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+              <option value="General">General</option>
+              <option value="Booking">Booking</option>
+            </select>
+          </span>
+          <span class="wpcf7-form-control-wrap Message">
+            <textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+          </span>
+          <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn">
+          <img class="ajax-loader" src="http://www.jordancundiff.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
+      </p>
+      <div class="wpcf7-response-output wpcf7-display-none">
+      </div>
+  </form>
+        </body>
+  </html>
