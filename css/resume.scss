@@ -1,0 +1,78 @@
+
+  no-face {
+    display: block;
+    width: 16em;
+    height: 40em;
+    margin-top:150px;
+    margin-left:500px;
+    background-image: linear-gradient(to bottom, black 17em, rgba(0, 0, 0, 0));
+    border-radius: 50% 50% 0 0/50% 50% 0 0;
+    position: relative;
+  }
+  .btn-primary{
+    display:flex;
+    justify-content: center;
+    top:8em;
+width:40%;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+  }
+  a:hover{
+    color:#A5409D;
+    background-color: white;
+    
+  }
+  mask {
+    display: block;
+    width: 10em;
+    height: 15em;
+    position: absolute;
+    left: 3em;
+    top: 0em;
+    -webkit-animation: mask 5s ease-in-out infinite alternate;
+            animation: mask 5s ease-in-out infinite alternate;
+    background-image: linear-gradient(to right, rebeccapurple 30%, white 30%, white 70%, rebeccapurple 70%);
+    border-radius: 50% 50% 45% 45%/30% 30% 70% 70%;
+    box-shadow: 0 0 0 0.5em black, 0 0 0 1.4em white inset;
+  }
+  
+  eye {
+    display: block;
+    width: 2em;
+    height: 1.5em;
+    position: absolute;
+    left: 4em;
+    top: 5.2em;
+    border-radius: 50%;
+    box-shadow: -2.8em 0 0 0 black, -2.8em 0 0 0.5em white, -2.75em 1.2em 0 -0.3em rebeccapurple, -2.8em 0.9em 0 0.5em white, 2.8em 0 0 0 black, 2.8em 0 0 0.5em white, 2.75em 1.2em 0 -0.3em rebeccapurple, 2.8em 0.9em 0 0.5em white;
+  }
+  
+  mouth {
+    display: block;
+    width: 3em;
+    height: 1em;
+    position: absolute;
+    left: 3.5em;
+    top: 12em;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0.9em 0 -0.4em rebeccapurple;
+  }
+  
+  @-webkit-keyframes mask {
+    0% {
+      transform: translate3d(-1em, 0, 0);
+    }
+    100% {
+      transform: translate3d(1em, 0, 0);
+    }
+  }
+  
+  @keyframes mask {
+    0% {
+      transform: translate3d(-1em, 0, 0);
+    }
+    100% {
+      transform: translate3d(1em, 0, 0);
+    }
+  }

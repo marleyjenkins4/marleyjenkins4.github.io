@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/navbar.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 <head>
@@ -86,9 +86,13 @@
 </script>
 
 <html>
+   
     <body   ng-app="myApp">
       
-
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   
       <div id="starshine">
         <div class="template shine"></div>
@@ -114,45 +118,52 @@
             </div>
           </nav>
         </section>
-        <section class="projectstuff">
-        <div Class="button-wrap">
-            <a href="#" class="button">
-              WEBSITES
-            </a>
-            <a href="#" class="button">
-              LOGOS
-            </a>
-            <a href="#" class="button">
-              APP DESIGN
-            </a>
- 
-          </div>
-        </section>
-          <div class="content">
-            <div class="content-1 active">
-                <h1> Game Redesign Site</h1>
-                <p>This site was designed for my visual communtications class. 
-                  We were told to redesign a game site  and put more emphasis on creating a community for individuals who consider themselves fans of the kirby game . </p>
+      
+              <section class="projectstuff">
+                
+              <div Class="button-wrap">
+                
+                  <a href="#" class="button">
+                    WEBSITES
+                  </a>
+                  <a href="#" class="button">
+                    LOGOS
+                  </a>
+                  <a href="#" class="button">
+                    APP DESIGN
+                  </a>
+      
+                </div>
+              </section>
+              <div class="item" data-aos="fade-up">
 
-                <h1> Whisk It Shoppe Site</h1>
-                <p> This site was created in my senior capstone course. 
-                  The objective was to create an online presence for a local brick and boarder bakery shop called Whisk It Shoppe located in Rock Hill, South Carolina. 
-                   We created an customizeable  online catering ordering system that allows customers to order cakes, cookies, and other sweet treats at their convience. </p>
-                 <h1> Typeface Font Site</h1>
-                 <p>This site was designed for my visuals communications class.
-                   We were challenged to create a site based on a typography of  our choosing. 
-                  I choose to focus on The Gill Sans Font and explore it’s history and importance.</p>
-                       
-            </div>
-            <div class="content-2"><img src="./images/vector/projectpage/CHRISTIN.png"></div>
-            <div class="content-3">
-         <div class ="child"> <img src="./images/vector/projectpage/Group 10.png"></div>
-         <div class ="child">  <img src="./images/vector/projectpage/CHARM TRACKER.png"></div>
-            <div class ="child">  <img src="./images/vector/projectpage/HYKE.png"></div>
+                <div class="content">
+                  <div class="content-1 active">
+                      <h1> Game Redesign Site</h1>
+                      <p>This site was designed for my visual communtications class. 
+                        We were told to redesign a game site  and put more emphasis on creating a community for individuals who consider themselves fans of the kirby game . </p>
 
-                  
+                      <h1> Whisk It Shoppe Site</h1>
+                      <p> This site was created in my senior capstone course. 
+                        The objective was to create an online presence for a local brick and boarder bakery shop called Whisk It Shoppe located in Rock Hill, South Carolina. 
+                        We created an customizeable  online catering ordering system that allows customers to order cakes, cookies, and other sweet treats at their convience. </p>
+                      <h1> Typeface Font Site</h1>
+                      <p>This site was designed for my visuals communications class.
+                        We were challenged to create a site based on a typography of  our choosing. 
+                        I choose to focus on The Gill Sans Font and explore it’s history and importance.</p>
+                            
                   </div>
-          </div>
+                  <div class="content-2"><img src="./images/vector/projectpage/CHRISTIN.png"></div>
+                  <div class="content-3">
+              <div class ="child"> <img src="./images/vector/projectpage/Group 10.png"></div>
+              <div class ="child">  <img src="./images/vector/projectpage/CHARM TRACKER.png"></div>
+                  <div class ="child">  <img src="./images/vector/projectpage/HYKE.png"></div>
+
+                        
+                        </div>
+           
+        </div>
+        </div>
           <script>
             let i = -1;
             let time = 3000;

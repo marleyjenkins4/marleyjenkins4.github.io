@@ -34,7 +34,7 @@ $color-facebook:transparent ;
   display: flex;
   justify-content: center;
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 0px;
 
 
 }
@@ -181,16 +181,12 @@ width: 30%;
 }
 
 .contacts{
-  display:flex;
-  margin-left: 200px;
-  
-  padding:30px;
+
   font-family: 'Alegreya';
 font-style: normal;
 font-weight: 400;
 font-size: 50px;
 color:white;
-line-height: 68px;
 }
 input[type=submit]:hover {
   background-color: white;
@@ -200,12 +196,13 @@ input[type=submit]:hover {
 }
 
 .container {
-
+display: flex;
+justify-content: center;
 width:80%;
   border-radius: 5px;
-
-  padding: 20px;
-  margin-top:200px;
+margin-left: 100px;
+margin-top: 100px;
+  padding: 109px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -226,6 +223,11 @@ margin-top: -40px;
   margin-bottom: 20px;
  margin-left: 70px;
   resize: vertical;
+
+}
+.contacts{
+  display: flex;
+  justify-content: center;
 
 }
 }

@@ -2,6 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/navbar.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <head>
@@ -86,7 +88,11 @@ navSlide();
 
 <html>
     <body>
-      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    
 
   
       <div id="starshine">
@@ -119,9 +125,10 @@ navSlide();
       <div class="intrologo">
           <img src="./images/vector/aboutpage/nicetomeetyou.png">
         </div>
-        <section class="aboutme">
+        <div class="item" data-aos="fade-up">
+        <section   class="aboutme" >
      
-            <p>
+            <p >
                 My name is Marley Jenkins and I graduated from Winthrop University with a degree in Digital information Design and a cocnentration in Web Application Development. 
                 My major was  combination of both Computer Science and Design.  I attended Winthrop because I was able to find a major that combined both of my interests. 
                 There, I was able to gain user experience, design, and backend web development skills.     
@@ -132,7 +139,7 @@ navSlide();
 
             </p>
         </section> 
-        
+   
         <section class="aboutmemore">
           <p>
             <br/> <br/>
@@ -142,7 +149,9 @@ navSlide();
             I am also experienced in Figma, Adobe Illustrator, and Adobe Photoshop. I am continuing to improve my skills every day.
 
           </p>
+    
       </section>
+      </div>
       <div class="outline">
       <img  src="./images/vector/aboutpage/outline_of_me.svg">
     </div> 
