@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/launch.css">
-<link rel="stylesheet" href="css/star.css">
+<link rel="stylesheet" href="css/moving.css">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -11,76 +11,36 @@
     <title>Marley | Intro </title>
   </head>
 
-<script>
-        $(function() {
-      var body = $('#starshine'),
-      template = $('.template.shine'),
-      stars =  500,
-      sparkle = 20;
 
-
-      var size = 'small';
-      var createStar = function() {
-      template.clone().removeAttr('id').css({
-      top: (Math.random() * 100) + '%',
-      left: (Math.random() * 100) + '%',
-      webkitAnimationDelay: (Math.random() * sparkle) + 's',
-      mozAnimationDelay: (Math.random() * sparkle) + 's'
-      }).addClass(size).appendTo(body);
-      };
-
-      for(var i = 0; i < stars; i++) {
-      if(i % 2 === 0) {
-      size = 'small';
-      } else if(i % 3 === 0) {
-      size = 'medium';
-      } else {
-      size = 'large';
-      }
-
-      createStar();
-      }
-      });
-      </script>
-      <script>
-      const navSlide = () => {
-      const burger = document.querySelector('.burger');
-      const nav = document.querySelector('.nav-links');
-      const navLinks = document.querySelectorAll('.nav-links li');
-
-      //Toggle Nav
-      burger.addEventListener('click', ()=>{
-        nav.classList.toggle('nav-active');
-        
-        //Animate Links
-        navLinks.forEach((link, index)=>{
-          if(link.style.animation){
-            link.style.animation = ''
-          }else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-
-          }
-        });
-        
-        //burger animation
-        burger.classList.toggle('toggle');
-        
-        
-      });
-
-
-
-
-      }
-
-      navSlide();
-</script>
 <body>
 
-  <div id="starshine">
-    <div class="template shine"></div>
-   </div>
-<section>
+<div class="container">
+  <h1>Window Cat</h1>
+
+  <div class="window">
+    <div class="window-details"></div>
+    <div class="mountains-left"></div>
+    <div class="mountains-right"></div>
+    <div class="moon"></div>
+    <div class="star star-glow star-1"></div>
+    <div class="star star-glow star-2"></div>
+    <div class="star star-3"></div>
+    <div class="star star-4"></div>
+    <div class="star star-5"></div>
+    <div class="clouds">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="cat">
+      <div class="cat-body">
+        <div class="cat-ears"></div>
+      </div>
+      <div class="cat-belly"></div>
+    </div>
+
+  </div>
+
 
 	<div class="content">
 		<h2> I'M MARLEY</h2>

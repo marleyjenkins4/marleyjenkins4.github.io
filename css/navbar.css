@@ -17,25 +17,6 @@ nav {
   color: #6F0664;
 }
 
-.kirbys {
-  display: inline-block;
-  justify-items: space;
-  margin-left: 200px;
-}
-.kirbys a {
-  text-decoration: none;
-  font-family: "Alegreya";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  z-index: 1;
-}
-.kirbys a:hover {
-  z-index: 1;
-  color: #E7C06C;
-}
-
 .kirby {
   width: 100%;
 }
@@ -414,7 +395,6 @@ div.active {
 }
 
 .content-3 {
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
