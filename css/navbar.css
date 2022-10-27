@@ -420,6 +420,10 @@ x {
   bottom: 32.67%;
 }
 
+.links a {
+  z-index: 1;
+}
+
 .aboutme {
   display: flex;
   justify-content: center;
