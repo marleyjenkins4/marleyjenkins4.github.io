@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-
-
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-
-
+.bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 130vw;
+  min-height: 100vh;
+}
 
 
 
@@ -231,6 +236,22 @@ color:#fff;
   align-items: center;
 
 }
+.resume{
+  
+position: absolute;
+width:30%;
+height: 9vh;
+left: 560px;
+top: 2100px;
+background-color: transparent;
+font-family: 'Akshar';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+border: 1px solid #6F0664;
+
+color: #6E0664;
+}
 .slide{
   position: absolute;
   width: 80vw;
@@ -380,21 +401,77 @@ border-radius: 62.5px;
   font-family: 'a Alloy Ink';
   font-style: normal;
   font-weight: 400;
-  font-size:1.3em;
+  font-size:2em;
 }
+.yellow{
+  color: #6E0664;
+}
+
+x{
+  position: relative;
+}
+.x_content {
+
+  position: absolute;
+  left: -1%;
+  right: -1%;
+  top:75%;
+  bottom: 32.67%;
+  
+  
+}
+
 .aboutme{
   display: flex;
 justify-content:center;
   align-items: center;
 
-  font-family: 'Abhaya Libre Medium';
-font-style: normal;
-font-weight: 500;
-font-size: 1.3em;
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 700;
+padding-left: 3.6em;
+font-size:4.375em;
 padding-top:2em;
-padding-left:16em;
-width:80%;
-color:white;
+
+width:83%;
+color:black;
+img{
+  padding-left: .2em;
+}
+}
+
+.sparkle_content{
+  position: absolute;
+  left:76%;
+  right: -250%;
+  top: 28.52%;
+  bottom: 33.13%;
+  
+  transform: rotate(30deg);
+}
+
+.stars2{
+  position: absolute;
+  left: 41.83%;
+  right: 45.51%;
+  top: 30.8%;
+  bottom: 62.9%;
+  
+  transform: rotate(11.7deg);
+}
+.small{
+  font-size:.6em;
+}
+.stars{
+
+ 
+  position: absolute;
+  left: 41.14%;
+  right: 46.2%;
+  top: 10.3%;
+  bottom: 83.4%;
+  
+  transform: rotate(11.7deg);
 }
 .content-3{
 
@@ -413,23 +490,44 @@ justify-content: center;
 
 
 
+.dots{
+  display:flex;
+  justify-content: center;
+  padding-left:10em;
+  padding-top:4em;
+}
 
-
+.catcher{
+  font-family: 'Akshar';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+line-height: 36px;
+}
 
 .aboutmemore{
-  display: flex;
+  padding-top: 3em;
 justify-content:center;
   align-items: center;
-  min-height: 10vh;
-  font-family: 'Abhaya Libre Medium';
+
+  font-family: 'Akshar';
 font-style: normal;
 font-weight: 500;
 font-size: 1.3em;
-
-padding-left:16em;
 width:80%;
-color:white;
+padding-left:16em;
+color:black;
+
+p{
+  font-family: 'Abhaya Libre Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
 }
+}
+
+
 .nav-links li{
   list-style:none;
   z-index: 1;
@@ -437,12 +535,13 @@ color:white;
 
 }
 .nav-links a{
-  color: rgb(226,226,226);
+  font-family: 'Akshar';
+  color:black;
+  font-weight: bold;
+  font-style: normal;
   text-decoration: none;
-  font-weight:bold;
-
   margin-left:10px;
-  font-size:.7em;
+  font-size:1em;
   align-items: center;  
   
 z-index: 1;
@@ -461,6 +560,18 @@ z-index: 1;
   transition: all 0.3s ease
   
 }
+
+.circle_content{
+  position: absolute;
+left: -22.63%;
+right: 58.82%;
+top: 55.06%;
+bottom: 27.84%;
+
+transform: rotate(-9deg);
+}
+
+
 
 
 @media screen and (max-width:1024px){
@@ -519,7 +630,25 @@ z-index: 1;
     transform: translateX(0px);
   }
 }
+.morestars_content{
 
+position: absolute;
+width: 455.17px;
+height: 384.75px;
+
+transform: rotate(11.7deg);
+}
+.scribblestars_content{
+
+  position: absolute;
+  width: 273.71px;
+  height: 307.54px;
+  left: 1085px;
+  top: 1495.54px;
+  
+  transform: rotate(-45deg);
+
+}
 .toggle .line1{
   transform: rotate(-40deg) translate(-5px,6px);
 }
@@ -530,5 +659,165 @@ z-index: 1;
 
 .toggle .line3{
   transform: rotate(35deg) translate(-5px,-6px);
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  padding: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.progress-bar {
+  background: white
+  ;
+  border-radius: 3px;
+  width: 100%;
+  height: 15px;
+  margin-top: 5px;
+/*   overflow: hidden; */
+}
+
+  
+
+.progress {
+/*   width: 0; */
+}
+
+#html .progress {
+  max-width: 90%;
+  height: 100%;
+  background: #ed2828;
+  border-radius: 3px;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#html .progress::after {
+  content: "90%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#html .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+#css .progress {
+  max-width: 70%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#css .progress::after {
+  content: "70%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#css .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+#js .progress {
+  max-width: 60%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#js .progress::after {
+  content: "60%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#js .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+@keyframes loadBars{
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+  
 }
 @import url(star.css);

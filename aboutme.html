@@ -2,9 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/form.css">
+
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<link rel="stylesheet" href="css/form.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <head>
   <title>Marley | About Me </title>
@@ -21,73 +23,11 @@
     });
 </script>
 
-<script>
-    $(function() {
-  var body = $('#starshine'),
-  template = $('.template.shine'),
-  stars =  500,
-  sparkle = 20;
-
-
-  var size = 'small';
-  var createStar = function() {
-  template.clone().removeAttr('id').css({
-  top: (Math.random() * 100) + '%',
-  left: (Math.random() * 100) + '%',
-  webkitAnimationDelay: (Math.random() * sparkle) + 's',
-  mozAnimationDelay: (Math.random() * sparkle) + 's'
-  }).addClass(size).appendTo(body);
-  };
-
-  for(var i = 0; i < stars; i++) {
-  if(i % 2 === 0) {
-  size = 'small';
-  } else if(i % 3 === 0) {
-  size = 'medium';
-  } else {
-  size = 'large';
-  }
-
-  createStar();
-  }
-  });
-</script>
-<script>
-  const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-  
-  //Toggle Nav
-  burger.addEventListener('click', ()=>{
-    nav.classList.toggle('nav-active');
-    
-    //Animate Links
-    navLinks.forEach((link, index)=>{
-      if(link.style.animation){
-        link.style.animation = ''
-      }else{
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-
-      }
-    });
-    
-    //burger animation
-    burger.classList.toggle('toggle');
-    
-    
-  });
-  
-  
-  
-  
-}
-
-navSlide();
-</script>
 
 <html>
+
     <body>
+    
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init();
@@ -95,19 +35,16 @@ navSlide();
     
 
   
-      <div id="starshine">
-        <div class="template shine"></div>
-       </div>
+     <img class="bg" src="./images/background.png">
         <section class="navbar">
           <nav>
           <div class="logo">
-           <a href= "aboutme.html"><img src="./images/vector/aboutpage/LOGO.svg">
+           <img src="./images/vector/aboutpage/LOGO.svg">
             </div>
             <ul class="nav-links">
               <li><a href="aboutme.html">About Me</a></li>  
               <li><a href="research.html">Research</a></li>
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="contactme.html">Contact Me</a></li>
              
 
             </ul>
@@ -121,46 +58,129 @@ navSlide();
 
     
 </script>     
-      <div class="intrologo">
-          <img src="./images/vector/aboutpage/nicetomeetyou.png">
-        </div>
-        <h1> Hi there, nice to meet you. </h1>
-        <h2> My name is Marley Jenkins</h2>
-        <div class="item" data-aos="fade-up">
-        <section   class="aboutme" >
-            <p >
-               I am a Software Developer and Designer.
-                <br/><br/>
-              I believe that the digtal experience should be one that simple and fun to use.
-              I produce and design websites to do just that. I love to step out of my conformt zone when it comes to web designs.
-              All while adhering to company and user needs. I mainly want to utilizie my skills to help better my community. 
-            </p>
+<script>
+  (function(){
+      var words = [
+          'DESIGNER.',
+          'CREATOR.',
+          'INVENTOR.',
+				  'ARTIST.',
+				
+			
+          ], i = 0;
+      setInterval(function(){
+          $('#changingword').fadeOut(function(){
+              $(this).html(words[i=(i+1)%words.length]).fadeIn();
+          });
+      }, 2000);
+        
+  })();
+</script>
+    
+        <section class="aboutme" data-aos="fade-up">
+           <p> <span class="small"> HI THERE.I’M </span> <br/>MARLEY JENKINS. A SOFTWARE  <span class="yellow">DEVELOPER </span> AND <span class="yellow" id="changingword">DESIGNER.</span> //</p>
+            <img  class= "image2" src="./images/me.jpg" class="dots">
+            <img  class= "stars" src="./images/stars.svg" class="dots">
 
         </section> 
-   
+        <div class="x">
+          <img  class= "x_content" src="./images/x.svg" >
+      </div>
+      <div class="sparkle">
+        <img class="sparkle_content" src="./images/sparkle.svg">
+      </div>
+      <div class="circle">
+        <img class="circle_content" src="./images/circle.svg">
+      </div>
+
+      
         <section class="aboutmemore">
+          <p data-aos="fade-up"> <span class = "catcher" > MY GOAL // </span>
+            I believe that the digtal experience should be one that simple and fun to use.  I produce and design websites to do just that.
+             I love to step out of my conformt zone when it comes to designing websites.
+              All while adhering to company and user needs. I mainly want to utilizie my skills to help better grow and enhance businesses. </p>
           <p>
-            <p> 
-              <br/> <br/>
-              My background: I have a degree in Digital Information Design, think of it as a mixture 
+              <br/>
+              <br/>
+              <br/>
+     
+           <p data-aos="fade-up">
+             <span class = "catcher"  > MY BACKGROUND //</span> 
+              I have a degree in Digital Information Design with a concentration of Web Application Development, think of it as a mixture 
               of computer science and user interface design . I studied alot on the importance of the user experience and learned a plethora
               of programming languages that equipt me to make sites like this on my own.
-         <br/> <br/> 
-          When I'm not designing, you can find me drawing, skating, reading, listening to music, or hanging out with family and friends.
-          <br/> <br/>
-            I am passionate about : Social justice, design, history , research, and food. 
+              <br/>
+              <br/>
+              <br/>
             </p>
+          <p  data-aos="fade-up"> 
+         <span class = "catcher" >  WELL.. WHEN I'M NOT <span class="yellow"> DESIGNING </span> OR <span class="yellow">DEVELOPING </span> // </span> you can find me drawing, skating, reading, listening to music, or hanging out with family and friends.
+              <br/>
+              <br/>
+              <br/>
           </p>
-    
+
+          <p data-aos="fade-up">    
+              <span class = "catcher" >I'M PASSIONATE ABOUT // </span>Social justice, design, history , research, and food. 
+            </p>
+            <br/>
+            <br/>
+            <br/>
+            <p data-aos="fade-up">    
+              <span class = "catcher" >SKILLS // </span>
+              <br/>
+              <br/>
+
+              C++ , PYTHON  ,  JAVA 
+              <br/>
+              HTML, CSS,   SCSS,     
+              <br/>
+               JAVASCRIPT , ANDRIOD STUDIO , FLUTTER METEOR 
+               <br/>
+                REACT.JS, MYSQL , MongoDB 
+              <br/>
+              GITHUB ,  FIGMA
+              <br/>
+               ADOBE ILLUSTRATOR ,  ADOBE PHOTOSHOP
+            </p>
+
+            <br/>
+            <br/>
+            <br/>
+
+         
+            <p  class="contact"data-aos="fade-up">    
+              YOU CAN REACH VIA EMAIL: MARLEYJENKINS4@GMAIL.COM
+            </p>
+            <br/>
+            <br/>
+            <br/>
+        
       </section>
+     
+      <br/>
+      <br/>
+      <br/>
+      <button class="resume">DOWNLOAD MY RESUME // </button>
+      <div class=" contect">
+      <p data-aos="fade-up">    
+        <span class = "catcher" > WANNA CONNECT?// </span>
+
       </div>
-      <div class="outline">
-      <img  src="./images/vector/aboutpage/outline_of_me.svg">
-    </div> 
-
-
-    <footer>
-
-    </footer>
+      <div class="links">
+        <a href ="">
+          LINKEDIN //
+        </a>
+        <a href ="">
+          GITHUB // 
+        </a>
+        <a href ="">
+          BEHANCE //
+        </a>
+      </div>
+        </p>
+      <img class="morestars_content" src="./images/openstars.svg">
+      <img class="scribblestars_content" src="./images/scribble_stars.svg">
+  
     </body>
 </html>
