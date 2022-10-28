@@ -626,6 +626,19 @@ transform: rotate(-9deg);
   }
 
 }
+
+@media screen and (min-width: 1400px) {
+  .x_content{
+    top:600px;
+    right:-400px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .x_content{
+    top:600px;
+    right:-400px;
+  }
+}
 @media screen and (min-width:1920px){
 .bg{
   height:100%;
