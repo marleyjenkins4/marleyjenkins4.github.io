@@ -605,8 +605,8 @@ x {
   }
 }
 @media screen and (min-width: 1920px) {
-  .body {
-    background-color: blue;
+  .bg {
+    height: 100%;
   }
   .aboutme p {
     width: 40%;
