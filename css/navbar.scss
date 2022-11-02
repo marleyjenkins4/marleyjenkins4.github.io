@@ -545,8 +545,17 @@ width:100%;
     font-size: 18px;
     line-height: 41px;
     color:black;
+    box-shadow: inset 0 0 0 0 #6E0664;;
+  
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
 
+.contactlinks_ a:hover{
+  box-shadow: inset 100px 0 0 0 #6E0664;;
+  color: white;
+}
 .aboutme{
   display: flex;
   flex-direction: row;
