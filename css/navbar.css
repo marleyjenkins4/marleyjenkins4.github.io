@@ -26,9 +26,29 @@ nav {
   color: #6F0664;
 }
 
-.researchone {
+.research {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.research p {
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  width: 70%;
+}
+.research h4 {
+  font-family: "Akshar";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  width: 60%;
+  text-align: center;
+  color: #6E0664;
 }
 
 .more_projects {
