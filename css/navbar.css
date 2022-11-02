@@ -26,16 +26,42 @@ nav {
   color: #6F0664;
 }
 
+.researchone {
+  display: flex;
+  flex-direction: column;
+}
+
+.more_projects {
+  text-align: center;
+}
+.more_projects li {
+  text-align: center;
+}
+.more_projects a {
+  text-decoration: none;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #6E0664;
+}
+
 .kirby {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
 }
 
 .whiskeitshop {
-  width: 100%;
+  width: 60%;
+  justify-content: center;
 }
 
 .typeface {
-  width: 100%;
+  width: 60%;
+  justify-content: center;
 }
 
 .projectstuff {
@@ -47,9 +73,10 @@ nav {
 a.button {
   position: relative;
   display: inline-block;
-  width: 100px;
+  width: 200px;
   height: 50px;
-  color: #fff;
+  font-size: 30px;
+  color: #6F0664;
   line-height: 50px;
   text-align: center;
   text-decoration: none;
@@ -78,30 +105,62 @@ a.active {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  height: 300%;
 }
 
 .content-1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 50%;
+  min-height: 2000vh;
+  width: 70%;
   z-index: 1;
 }
 .content-1 h1 {
-  font-family: "Alegreya";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 68px;
-  color: white;
   text-align: center;
+  font-family: "Akshar";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  align-content: center;
+  color: #6E0664;
 }
 .content-1 p {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  color: white;
+  font-size: 1.875em;
+  width: 100%;
+  color: #6E0664;
+}
+.content-1 a {
+  margin-left: 210px;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 10px;
+  /* identical to box height */
+  color: #6E0664;
+  text-decoration: none;
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
 }
 
 .links {
@@ -210,9 +269,15 @@ a.active {
   align-items: center;
 }
 
+.resume:hover {
+  color: white;
+}
+
 .resume {
+  z-index: 1;
+  text-decoration: none;
   position: absolute;
-  width: 30%;
+  width: 40%;
   height: 9vh;
   left: 560px;
   top: 2100px;
@@ -222,13 +287,13 @@ a.active {
   font-weight: 700;
   font-size: 33px;
   border: 1px solid #6F0664;
-  padding-left: 30px;
   padding-top: 20px;
-  padding-right: 130px;
+  padding-left: 130px;
   color: #6E0664;
 }
 .resume a {
   text-decoration: none;
+  z-index: 1;
 }
 
 .slide {
@@ -368,7 +433,13 @@ div.active {
 }
 
 .button-wrap {
-  border: 1px solid white;
+  color: #6F0664;
+  font-family: "Akshar";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #6F0664;
+  border: 1px solid #6F0664;
   border-radius: 62.5px;
 }
 
